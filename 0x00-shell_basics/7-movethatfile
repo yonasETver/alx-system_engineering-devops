@@ -1,0 +1,2 @@
+#!/bin/bash
+mv /root/tmp/batty /root/tmp/my_first_directory
