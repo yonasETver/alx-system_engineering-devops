@@ -1,3 +1,8 @@
 #!/usr/bin/env bash
-# cutting some fields
-for i in *; do echo "$i" | cut -d "-" -f2; done
+# Display ls -l with cutting their #
+
+LS="$(ls)"
+for i in $LS
+do
+    echo "$i" | cut -d - -f2
+done
