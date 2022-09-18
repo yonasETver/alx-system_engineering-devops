@@ -1,0 +1,13 @@
+# Secured and monitored web infrastructure 
+
+https://1drv.ms/u/s!AjBTyYKOuAuTe3GRHEIh1zygqWM?e=bj31hd
+
+o	In this design, there is an additional element, firewall and SSH, to enhance security issues faced in the previous design and a monitoring application to monitor the entire server's status for fast response and reliable data storage.
+o	Firewall: is a network security device that monitors and filters network traffic incoming and coming out and allows non-threatening traffic based on preset network policy. In generating, it is a barrier between the internet or the public network and the private or local network.
+o	HTTPS: https is more encrypted because it uses secure port 443 that encrypts outgoing information and makes it much difficult for intruders to grasp the meaning because it is cypher text rather than the regular http, which uses port 80, and information is in plain text.
+o	Monitoring: is used for monitoring the health status of the performance of the component and the task associated with it.
+o	Monitoring tool is collecting data by completely following the health and configuration changes of the entire component ecosystem.
+o	If we want to monitor a web server QPS, we have to know the capacity of memory (RAM)  , the capacity of disk space to cache and the capacity of CPU to handle requests during a given second.
+o	Terminating SSL at the load balancer level is an issue because decryption is resource and or CPU intensive. Handling decryption at load balancing level is ensuring or increasing server-processing power. 
+o	If only one MySQL server is capable of accepting writes, it is an issue because of the asynchronous replication, the transaction committed on the master may not be available on the slave if the single master fails.  The RAM and CPU may be consumed unless it is upgraded every time it gets to its peak.
+o	The same components (database, web server and application server) might be a problem if they are combined in a single machine because the web server is accessible to the public internet and may be exposed to intruders and may affect the entire machine. There might be a scalability issue and also a performance database web server and application server consume 3 times the CP, RAM and disk.
