@@ -2,11 +2,31 @@
 
 https://1drv.ms/u/s!AjBTyYKOuAuTerulD-EEsbuI_qI?e=wC4S7N
 
-o	In this design, there is an additional load balancer, which handles multiple user requests, maps server data, and sends user requests accordingly.
-o	The load balancer will use a dynamic load balancer algorithm called weighted response time based on the average response time of each server and the combined number of connections each server has. By sending traffic to the server, which has, a quicker response time, that makes the user get a faster service. 
-o	Active-Active or Active-Passive load balancing configuration: In an active-active load balancing setup, the load balancer spreads the workload traffic among multiple nodes. The Active-active load balancing setup, on the other hand, recognizes a failed nod and redirects the traffic to the next available node. This design uses an active-active setup because I think I intend to use weighted response time-based algorithm and the prior target is a fast response time, so by sending them to multiple nodes based on the algorithm later, the user gets a fast response from one of the nodes.
-o	Database Primary-Replica (Master-Slave): this enables data replication from the database server (the master one) to one or multiple more databases (the slaves). The master loges the update to the replica (the slaves) based on the priory set algorithm.
-o	Primary node vs Replica node: The deference between the primary node and the replica node is that the primary node is the one that makes the copy and updates every time to the replica and then the replica gets a copy of the primary.
-o	SPOF: The single point of failure (SPOF) in this design  may occur if the load balancer fails because there is only one load balancer that handles user request and if it fails there is no other balancer, so the user request will not be handled.
-o	Security issues: In this design, there might be a security issue because there is no firewall that monitors incoming and outgoing network traffic. This helps intruders to get to the server, and there is no HTTPS because it is an extension and secure HTTPS and it uses encryption tapped clearly by hackers.
-o	There is no monitoring application in this design, so the server status is not well known and there may not be a fast response to users and data may also be lost.
+o	In this design, there is an additional load balancer, which handles multiple user 
+requests, maps server data, and sends user requests accordingly.
+o	The load balancer will use a dynamic load balancer algorithm called weighted response 
+time based on the average response time of each server and the combined number of connections
+each server has. By sending traffic to the server, which has, a quicker response time, that 
+makes the user get a faster service. 
+o	Active-Active or Active-Passive load balancing configuration: In an active-active load 
+balancing setup, the load balancer spreads the workload traffic among multiple nodes. 
+The Active-active load balancing setup, on the other hand, recognizes a failed nod and 
+redirects the traffic to the next available node. This design uses an active-active setup 
+because I think I intend to use weighted response time-based algorithm and the prior target 
+is a fast response time, so by sending them to multiple nodes based on the algorithm later, 
+the user gets a fast response from one of the nodes.
+o	Database Primary-Replica (Master-Slave): this enables data replication from the database server
+(the master one) to one or multiple more databases (the slaves). The master loges the update to 
+the replica (the slaves) based on the priory set algorithm.
+o	Primary node vs Replica node: The deference between the primary node and the replica node is 
+that the primary node is the one that makes the copy and updates every time to the replica and 
+then the replica gets a copy of the primary.
+o	SPOF: The single point of failure (SPOF) in this design  may occur if the load balancer fails 
+because there is only one load balancer that handles user request and if it fails there is no 
+other balancer, so the user request will not be handled.
+o	Security issues: In this design, there might be a security issue because there is no firewall 
+that monitors incoming and outgoing network traffic. This helps intruders to get to the server, 
+and there is no HTTPS because it is an extension and secure HTTPS and it uses encryption tapped 
+clearly by hackers.
+o	There is no monitoring application in this design, so the server status is not well known and 
+there may not be a fast response to users and data may also be lost.
