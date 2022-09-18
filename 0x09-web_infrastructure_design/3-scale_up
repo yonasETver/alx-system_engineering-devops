@@ -1,0 +1,7 @@
+# Scale up 
+
+https://1drv.ms/u/s!AjBTyYKOuAuTfMmTcGa74RUikUg?e=HbBcZ0
+
+o	In this design, we will solve the issues we faced designing database, web server and application 
+server on a single machine with security issues, performance and scalability. In this design stage 
+we will also add additional load balancers. We will enhance performance availability.
