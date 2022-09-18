@@ -2,14 +2,33 @@
 
 https://1drv.ms/u/s!AjBTyYKOuAuTeXjPVimb4JSSHls?e=nbpj1u
 
-o	Server: is a computer or a computer program which manages (creates, updates, and deletes) and accesses data to a centralized organization through a computer network.
-o	Role of DNS: The Domain Name System enables internet users to access websites without having to know the associated IP address. The system automatically links to the IP corresponding to the domain after it scans the name. The DNS helps the end-user remember the issue of the IP addresses of each website.  
-o	The DNS record www.  www is a cname in the DNS and it is the subdomain of a large website. The main purpose is used to identify a website.
-o	Web server:  is used for processing and handling HTTP/HTTPS requests coming from the user system. It is also used to store and protect website data.
-o	Application server: is a server that hosts or stores user business logic and facilitates access and performance of the business application. 
-o	The function of the application server: is to act as host (or container) for the user's business logic while facilitating access to and performance of the business application.
-o	The role of the database: The role of the database is used to store and manage big data. The database separates the data from the data definition (the program) and solves the major issue of the file system encounter; data duplication and upgrading the system to reentering the data due to tightly coupled the data and the program
-o	The server uses a computer network, different interfaces and network protocol to communicate at user requests on the website and the server. 
-o	SPOF: A single point of failure (SPOF) occurs when a non-redundant system part of the database system is dysfunctional, causing the whole system to go down or to fail. Making the database redundant solves this issue. If one part fails, it works, from the other redundant part so this design only, one database a single filer may occur. 
-o	Downtime: The downtime of the database occurs in two scenarios: planned (for maintenance and upgrade) and unplanned due to system failure and any other issue. Solve the planned downtime by always scheduling maintenance in advance and fixing this schedule during off-hours when regular operations are almost nil. 
-o	Incoming traffic: If incoming traffic is growing too much, the database may not handle it because it may become busy handling the request to overcome overhead placing a load balancer between the user's request and its server.
+o	Server: is a computer or a computer program which manages (creates, updates, and deletes) 
+and accesses data to a centralized organization through a computer network.
+o	Role of DNS: The Domain Name System enables internet users to access websites without having 
+to know the associated IP address. The system automatically links to the IP corresponding to the 
+domain after it scans the name. The DNS helps the end-user remember the issue of the IP addresses 
+of each website.  
+o	The DNS record www.  www is a cname in the DNS and it is the subdomain of a large website. 
+The main purpose is used to identify a website.
+o	Web server:  is used for processing and handling HTTP/HTTPS requests coming from the user system. 
+It is also used to store and protect website data.
+o	Application server: is a server that hosts or stores user business logic and facilitates access 
+and performance of the business application. 
+o	The function of the application server: is to act as host (or container) for the user's business 
+logic while facilitating access to and performance of the business application.
+o	The role of the database: The role of the database is used to store and manage big data. 
+The database separates the data from the data definition (the program) and solves the major 
+issue of the file system encounter; data duplication and upgrading the system to reentering 
+the data due to tightly coupled the data and the program
+o	The server uses a computer network, different interfaces and network protocol to communicate at 
+user requests on the website and the server. 
+o	SPOF: A single point of failure (SPOF) occurs when a non-redundant system part of the database 
+system is dysfunctional, causing the whole system to go down or to fail. Making the database redundant 
+solves this issue. If one part fails, it works, from the other redundant part so this design only, one 
+database a single filer may occur. 
+o	Downtime: The downtime of the database occurs in two scenarios: planned (for maintenance and upgrade) 
+and unplanned due to system failure and any other issue. Solve the planned downtime by always scheduling 
+maintenance in advance and fixing this schedule during off-hours when regular operations are almost nil. 
+o	Incoming traffic: If incoming traffic is growing too much, the database may not handle it because it 
+may become busy handling the request to overcome overhead placing a load balancer between the user's 
+request and its server.
